@@ -1,0 +1,76 @@
+{% extends 'base.html' %} {% block title %} About me |{% endblock %} {% block
+head %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static',filename='styles/about_me.css') }}"
+/>
+{% endblock %} {% block content %}
+
+<section class="section">
+  <div class="left-section font-size-jumbo">
+    <span class="span-hover title"> About me </span>
+  </div>
+  <div class="right-section">
+    <div class="about-me-text font-text-normal-responsive">
+      Lorem ipsum dolor sit amet consectetur. Praesent mauris fringilla id vitae
+      quisque lorem dolor adipiscing sed. Vitae lectus duis ut id. Sapien
+      fermentum auctor pellentesque turpis metus praesent dapibus ipsum. Enim
+      tortor erat non et faucibus nulla. Eget nunc eu vel ultrices velit. Erat
+      dui et ultricies sit faucibus. Condimentum nascetur enim tellus libero. Ut
+      libero leo sit quam sollicitudin vulputate. Orci turpis proin nunc lorem
+      justo. Dictumst tincidunt montes morbi mi. Pellentesque lacus id at augue.
+      Nunc ut molestie praesent commodo amet hendrerit sit. Viverra felis
+      ullamcorper a etiam fermentum.
+    </div>
+    <div class="collage">
+      <div class="container-fit container-washi-tape-2">
+        <img
+          id="washi-tape-2"
+          src="{{ url_for('static',filename='imgs/washi-tape-2.png') }}"
+          alt="washi-tape-2"
+        />
+      </div>
+      <div class="container-hover container-crochet">
+        <img
+          class="img-hover"
+          id="crochet"
+          src="{{ url_for('static',filename='imgs/crochet.png') }}"
+          alt="crochet"
+        />
+      </div>
+      <div class="container-fit container-washi-tape-6">
+        <img
+          id="washi-tape-6"
+          src="{{ url_for('static',filename='imgs/washi-tape-6.png') }}"
+          alt="washi-tape-6"
+        />
+      </div>
+      <div class="container-hover container-piano">
+        <img
+          class="img-hover"
+          id="piano"
+          src="{{ url_for('static',filename='imgs/piano.png') }}"
+          alt="piano"
+        />
+      </div>
+      <div class="container-fit container-wax-seal">
+        <img
+          id="wax-seal"
+          src="{{ url_for('static',filename='imgs/wax-seal.png') }}"
+          alt="wax-seal"
+        />
+      </div>
+      <div class="container-hover container-programming">
+        <img
+          class="img-hover"
+          id="programming"
+          src="{{ url_for('static',filename='imgs/programming.png') }}"
+          alt="programming"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

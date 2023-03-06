@@ -1,0 +1,61 @@
+{% extends 'base.html' %} {% block title %} Contact Me |{% endblock %} {% block
+head %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static',filename='styles/contact_me.css') }}"
+/>
+{% endblock %} {% block content %}
+
+<section class="section">
+  <div class="left-section font-size-jumbo">
+    <span class="span-hover title"> Contact me </span>
+  </div>
+  <div class="right-section">
+    <div class="about-me-text font-text-normal-responsive">
+      <form>
+        Hi there!
+        <br />
+        <p></p>
+
+        <label for="name-input"> My name is</label>
+        <input
+          required
+          type="text"
+          placeholder="Your Name"
+          id="name-input"
+          class="underline-input"
+        />
+        and
+        <label for="select-project"> I would like to contact you for a </label>
+        <select id="select-project" name="project">
+          <option value="web-design">Web Design</option>
+          <option value="illustration">Illustration</option>
+          <option value="other">Other</option>
+        </select>
+        project <label for="text-area"> or for:</label>
+        <br />
+        <textarea
+          id="text-area"
+          cols="60"
+          rows="10"
+          class="text-area"
+        ></textarea>
+        <br />
+
+        <label for="email-input"> My email is </label>
+        <input
+          required
+          type="email"
+          placeholder="Your Email"
+          id="email-input"
+          class="underline-input"
+        />. <br />
+        <p></p>
+        Thanks!
+      </form>
+    </div>
+    <button type="submit" class="send-button">Send Email</button>
+  </div>
+</section>
+{% endblock %}

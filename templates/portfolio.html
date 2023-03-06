@@ -1,0 +1,37 @@
+{% extends 'base.html' %} {% block title %} Portfolio |{% endblock %} {% block
+head %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static',filename='styles/portfolio.css') }}"
+/>
+{% endblock %} {% block content %}
+<section id="section-portfolio" class="section">
+  <div class="font-size-jumbo">
+    <span class="span-hover">Portfolio</span>
+  </div>
+  <div class="container-projects">
+    <a href="{{ url_for('web_designer')}}">
+      <div class="web-design-projects">
+        <img
+          class="img-hover"
+          src="{{ url_for('static',filename='imgs/web-design-projects.png') }}"
+          alt="web-design-projects"
+        />
+        <div id="text-projects" class="text-effect">Web design Projects</div>
+      </div>
+    </a>
+    <a href="{{ url_for('illustrator')}}">
+      <div class="illustration-projects">
+        <img
+          class="img-hover"
+          src="{{ url_for('static',filename='imgs/illustration-projects.png') }}"
+          alt="illustration-projects"
+        />
+        <div id="text-projects" class="text-effect">Illustration Projects</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+{% endblock %}

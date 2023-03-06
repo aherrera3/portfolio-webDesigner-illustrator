@@ -1,0 +1,88 @@
+{% extends 'base.html' %} {% block head %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static',filename='styles/home.css') }}"
+/>
+{% endblock %} {% block content %}
+
+<div class="section-1">
+  <div class="font-size-jumbo">
+    Hi, I'm
+    <span class="span-hover">
+      <a href="{{ url_for('about_me')}}"> <p class="flipX">Mileva</p></a></span
+    >,
+
+    <!-- <br /> -->
+    <span class="span-hover">
+      <a href="{{ url_for('web_designer')}}">
+        <p class="flipX">Web designer</p></a
+      >
+    </span>
+    &
+    <span class="span-hover">
+      <a href="{{ url_for('illustrator')}}">
+        <p class="flipX">Illustrator</p></a
+      ></span
+    >.
+  </div>
+</div>
+<div class="section-2">
+  <div class="collage">
+    <!-- client and washi tape -->
+    <div class="washi-3-client img-hover">
+      <div class="container-washi-tape-3">
+        <img
+          id="washi-tape-3"
+          src="{{ url_for('static',filename='imgs/washi-tape-3.png') }}"
+          alt="washi-tape-3"
+        />
+      </div>
+      <div class="container-client">
+        <img
+          id="client"
+          src="{{ url_for('static',filename='imgs/client.png') }}"
+          alt="client"
+        />
+      </div>
+    </div>
+
+    <!-- client fav hobby and washi tape -->
+    <div class="washi-8-fav-hobby img-hover">
+      <div class="container-washi-tape-8">
+        <img
+          id="washi-tape-8"
+          src="{{ url_for('static',filename='imgs/washi-tape-8.png') }}"
+          alt="washi-tape-8"
+        />
+      </div>
+      <div class="container-client-fav-hobby">
+        <img
+          id="client-fav-hobby"
+          src="{{ url_for('static',filename='imgs/client-fav-hobby.png') }}"
+          alt="client-fav-hobby"
+        />
+      </div>
+    </div>
+
+    <!-- client working and wax seal -->
+    <div class="wax-client img-hover">
+      <div class="container-wax-seal">
+        <img
+          id="wax-seal"
+          src="{{ url_for('static',filename='imgs/wax-seal.png') }}"
+          alt="wax-seal"
+        />
+      </div>
+      <div class="container-client-working">
+        <img
+          id="client-working"
+          src="{{ url_for('static',filename='imgs/client-working.png') }}"
+          alt="client-working"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

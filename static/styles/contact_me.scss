@@ -1,0 +1,119 @@
+$user-input-font: 1.3vw;
+
+main,
+.section {
+  padding: 0;
+}
+
+.left-section {
+  // background-color: coral;
+  display: flex;
+  flex: 1;
+  position: relative;
+  top: -50px;
+  height: 100vh;
+  // align-items: flex-end;
+
+  .title {
+    position: fixed;
+    left: 0px;
+    top: 360px;
+    transform: rotate(-90deg);
+  }
+}
+
+.right-section {
+  display: flex;
+  // flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+  // background-color: lightpink;
+  // height: 100vh;
+  top: 3vh;
+  flex: 3;
+  gap: 4vh;
+
+  // margin-top: 100px;
+  margin-left: 1vh;
+  margin-right: 10vh;
+  margin-bottom: 4vh;
+
+  // .about-me-text {
+  //   margin-top: 100px;
+  //   margin-left: 50px;
+  //   margin-right: 150px;
+  //   margin-bottom: 70px;
+  // }
+
+  .underline-input {
+    font-size: $user-input-font;
+    font-family: inherit;
+    color: #7d8597; //hsla(222, 92%, 90%, 1);
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid hsl(239, 94%, 19%);
+    padding-left: 1vw;
+  }
+
+  .underline-input::placeholder {
+    color: #7d8597; // color penultimo de los blue neutral de figma assets
+  }
+
+  .underline-input:focus {
+    outline: none;
+  }
+
+  #name-input {
+    width: 10vw;
+  }
+
+  #email-input {
+    width: 20vw;
+  }
+
+  #select-project {
+    font-family: inherit;
+    font-size: $user-input-font;
+    color: #7d8597;
+    padding: 0.5vw 0.5vw;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid hsl(239, 94%, 19%);
+  }
+
+  #select-project:focus {
+    outline: none;
+    background-color: transparent;
+  }
+
+  .text-area {
+    resize: none;
+    font-size: $user-input-font;
+    font-family: inherit;
+    color: #5c677d;
+    width: 35vw; //600px;
+    height: 25vh; //200px;
+    background-color: #edf2fb;
+    border: 1px solid #979dac;
+    border-radius: 20px;
+    padding: 20px 20px;
+    margin-top: 25px;
+  }
+
+  .text-area:focus {
+    outline: none;
+  }
+
+  .send-button {
+    font-family: inherit;
+    font-size: $user-input-font;
+    text-transform: uppercase;
+    font-weight: 400;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    color: #edf2fb;
+    background-color: hsla(240, 94%, 26%, 1);
+  }
+}

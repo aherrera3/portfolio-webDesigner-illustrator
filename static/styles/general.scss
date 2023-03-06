@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
+
+/*-- fonts --*/
+$font-primary: "Abril Fatface", cursive;
+$font-secundary: "Raleway";
+
+$font-size-jumbo: 4.3vw;
+$font-size-jumbo-px: 80px;
+$font-size-text-normal-px: 24px;
+$font-size-text-normal: 1.6vw;
+$font-size-text-big: 30px;
+
+/*-- colors --*/
+$default-color: hsla(239, 94%, 19%, 1);
+$title-hover-color: hsla(239, 94%, 32%, 1);
+$background-color: #e2eafc;
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: $background-color;
+  font-family: $font-primary;
+  color: $default-color;
+}
+
+// .hero-div {
+//   display: flex;
+// }
+
+main,
+.section {
+  // width: 1fr;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 0px 0px 8vw;
+
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 100px;
+}
+
+.section {
+  top: 0px;
+}
+
+.font-size-jumbo {
+  font-size: $font-size-jumbo;
+}
+
+.font-size-jumbo-px {
+  font-size: $font-size-jumbo-px;
+}
+
+.font-text-normal {
+  font-family: $font-secundary;
+  font-size: $font-size-text-normal-px;
+  line-height: 175%;
+}
+
+.font-text-normal-responsive {
+  font-family: $font-secundary;
+  font-size: $font-size-text-normal;
+  line-height: 175%;
+}
+
+.font-text-big {
+  font-family: $font-secundary;
+  font-size: $font-size-text-big;
+  line-height: 175%;
+}
+
+// .container-fit {
+//   position: absolute;
+//   width: fit-content;
+//   // height: fit-content;
+// }
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.span-hover:hover {
+  color: $title-hover-color;
+  cursor: pointer;
+}
+
+// image effect
+.img-hover,
+.text-effect {
+  transition: 0.8s;
+}
+
+.img-hover:hover {
+  transform: scale(1.1);
+  z-index: 50 !important;
+}
+
+// .container-hover:has(> .img-hover:hover) {
+//   z-index: 50 !important;
+// }
