@@ -1,0 +1,223 @@
+// @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
+
+// VARIABLES
+/*-- fonts --*/
+// $font-primary: "Abril Fatface", cursive;
+// $font-secundary: "Raleway";
+$font-size-jumbo: 4.3vw;
+
+/*-- colors --*/
+// $background-color: #e2eafc;
+// $title-default-color: hsla(239, 94%, 19%, 1);
+// $title-hover-color: hsla(239, 94%, 32%, 1);
+
+//// general styles:
+
+// body {
+//   // font-family: $font-primary;
+//   // color: $title-default-color;
+// }
+
+.hero-div {
+  height: inherit;
+  background: radial-gradient(
+    43.52% 51.37% at 75.17% 51.43%,
+    rgba(33, 12, 166, 0.2) 0%,
+    rgba(33, 12, 166, 0.144296) 59.15%,
+    rgba(33, 12, 166, 0) 100%
+  );
+}
+
+/* flipping class and key frames*/
+.flipX {
+  display: inline-block;
+}
+
+.flipX:hover {
+  animation: 1.6s anim-flipX ease-out;
+}
+
+@keyframes anim-flipX {
+  0% {
+    opacity: 0;
+    transform: rotateX(90def);
+  }
+  50% {
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+  100% {
+    /* animate nothing to pause animation at the end */
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+}
+
+main {
+  display: flex;
+  font-style: normal;
+  font-size: $font-size-jumbo;
+  line-height: 125%;
+
+  p {
+    margin: 0;
+    display: inline;
+  }
+
+  .section-1 {
+    position: relative;
+    flex: 2;
+  }
+
+  .section-2 {
+    position: relative;
+    flex: 3;
+    height: 100%;
+
+    // display: flex;
+    // background-color: lightblue;
+
+    .collage {
+      background-color: lightcoral;
+      position: absolute;
+      left: 0%;
+      right: 0%;
+      top: 0%;
+      bottom: 0%;
+
+      .washi-3-client {
+        background-color: lightblue;
+        position: relative;
+        height: 68%;
+        width: 43%;
+        left: 47%;
+        top: 5%;
+        z-index: 5;
+        // border-radius: 30px;
+
+        .container-client {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border-radius: 30px; //inherit si el de arriba tmb tiene
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            border-radius: inherit;
+          }
+        }
+
+        .container-washi-tape-3 {
+          position: absolute;
+          right: -20%;
+          top: -7%;
+          transform: rotate(30deg);
+          z-index: 100;
+          height: fit-content;
+
+          #washi-tape-3 {
+            width: 100%;
+            object-fit: cover;
+            overflow: hidden;
+          }
+        }
+      }
+
+      .washi-8-fav-hobby {
+        background-color: lightgreen;
+        position: relative;
+        height: 40%;
+        width: 55%;
+        left: 3%;
+        top: -55%;
+
+        .container-client-fav-hobby {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border-radius: 20px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            border-radius: 20px;
+          }
+        }
+
+        .container-washi-tape-8 {
+          position: absolute;
+          left: -15%;
+          top: -15%;
+          transform: rotate(-30deg);
+          z-index: 100;
+
+          #washi-tape-8 {
+            width: 100%;
+            object-fit: cover;
+            overflow: hidden;
+          }
+        }
+      }
+
+      .wax-client {
+        background-color: beige;
+        position: relative;
+        width: 45%;
+        height: 32%;
+        left: 20%;
+        top: -48%;
+        z-index: 8;
+
+        .container-client-working {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border-radius: 20px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            border-radius: 20px;
+          }
+        }
+
+        .container-wax-seal {
+          position: absolute;
+          left: -15%;
+          top: -25%;
+          z-index: 100;
+
+          #wax-seal {
+            // width: 100%;
+            // height: 100%;
+            max-width: 90px;
+            max-height: 90px;
+            object-fit: cover;
+            overflow: hidden;
+          }
+        }
+      }
+
+      // esto quiero que sea para las imagenes de about me tambien:
+      // .img-hover {
+      //   transition: 0.8s;
+      // }
+
+      // .img-hover:hover {
+      //   transform: scale(1.1);
+      // }
+
+      // .container-hover:has(> .img-hover:hover) {
+      //   z-index: 50;
+      // }
+    }
+  }
+}

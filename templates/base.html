@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} {% endblock %} Mileva Mikaela</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='styles/header.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='styles/general.css') }}"
+    />
+    {% block head %} {% endblock %}
+  </head>
+  <body>
+    <div class="hero-div">
+      <header>
+        <div class="left-header">
+          <a href="{{ url_for('home')}}">
+            <img
+              class="logo"
+              src="{{ url_for('static',filename='imgs/wax-seal.png') }}"
+              alt="Logo"
+            />
+          </a>
+        </div>
+        <div class="mid-header">
+          <img
+            class="brightness"
+            src="{{ url_for('static',filename='imgs/icons/brightness.png') }}"
+            alt="brightness icon"
+          />
+        </div>
+        <div class="right-header">
+          <a href="{{ url_for('home')}}"
+            ><img
+              class="menu-icon"
+              src="{{ url_for('static',filename='imgs/icons/home.png') }}"
+              alt="home icon"
+          /></a>
+          <a href="{{ url_for('about_me')}}"
+            ><img
+              class="menu-icon"
+              src="{{ url_for('static',filename='imgs/icons/about-me.png') }}"
+              alt="about me icon"
+          /></a>
+          <a href="{{ url_for('portfolio')}}"
+            ><img
+              class="menu-icon"
+              src="{{ url_for('static',filename='imgs/icons/portfolio.png') }}"
+              alt="portfolio icon"
+          /></a>
+          <a href="{{ url_for('contact_me')}}"
+            ><img
+              class="menu-icon"
+              src="{{ url_for('static',filename='imgs/icons/contact-me.png') }}"
+              alt="contact me icon"
+          /></a>
+        </div>
+      </header>
+      <main>{% block content %} {% endblock %}</main>
+      <!-- <footer></footer> -->
+    </div>
+  </body>
+</html>
