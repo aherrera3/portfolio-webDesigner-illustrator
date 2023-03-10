@@ -50,7 +50,6 @@ main .section-2 {
   height: 100%;
 }
 main .section-2 .collage {
-  background-color: lightcoral;
   position: absolute;
   left: 0%;
   right: 0%;
@@ -58,7 +57,6 @@ main .section-2 .collage {
   bottom: 0%;
 }
 main .section-2 .collage .washi-3-client {
-  background-color: lightblue;
   position: relative;
   height: 68%;
   width: 43%;
@@ -86,17 +84,14 @@ main .section-2 .collage .washi-3-client .container-washi-tape-3 {
   top: -7%;
   transform: rotate(30deg);
   z-index: 100;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 main .section-2 .collage .washi-3-client .container-washi-tape-3 #washi-tape-3 {
-  width: 100%;
+  max-width: 90%;
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
 }
 main .section-2 .collage .washi-8-fav-hobby {
-  background-color: lightgreen;
   position: relative;
   height: 40%;
   width: 55%;
@@ -125,13 +120,12 @@ main .section-2 .collage .washi-8-fav-hobby .container-washi-tape-8 {
   z-index: 100;
 }
 main .section-2 .collage .washi-8-fav-hobby .container-washi-tape-8 #washi-tape-8 {
-  width: 100%;
+  max-width: 90%;
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
 }
 main .section-2 .collage .wax-client {
-  background-color: beige;
   position: relative;
   width: 45%;
   height: 32%;
@@ -155,8 +149,8 @@ main .section-2 .collage .wax-client .container-client-working img {
 }
 main .section-2 .collage .wax-client .container-wax-seal {
   position: absolute;
-  left: -15%;
-  top: -25%;
+  left: -8%;
+  top: -16%;
   z-index: 100;
 }
 main .section-2 .collage .wax-client .container-wax-seal #wax-seal {

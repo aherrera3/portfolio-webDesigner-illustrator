@@ -8,7 +8,7 @@ $font-secundary: "Raleway";
 $font-size-jumbo: 4.3vw;
 $font-size-jumbo-px: 80px;
 $font-size-text-normal-px: 24px;
-$font-size-text-normal: 1.6vw;
+$font-size-text-normal: 1.3vw;
 $font-size-text-big: 30px;
 
 /*-- colors --*/
@@ -22,6 +22,16 @@ body {
   background-color: $background-color;
   font-family: $font-primary;
   color: $default-color;
+
+  // no visible scroll bar
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+
+// no visible scroll bar
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
 }
 
 // .hero-div {
@@ -64,7 +74,7 @@ main,
 .font-text-normal-responsive {
   font-family: $font-secundary;
   font-size: $font-size-text-normal;
-  line-height: 175%;
+  line-height: 200%;
 }
 
 .font-text-big {

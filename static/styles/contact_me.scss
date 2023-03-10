@@ -1,4 +1,4 @@
-$user-input-font: 1.3vw;
+$user-input-font: 1.2vw;
 
 main,
 .section {
@@ -104,16 +104,16 @@ main,
     outline: none;
   }
 
-  .send-button {
+  .submit-input {
     font-family: inherit;
     font-size: $user-input-font;
     text-transform: uppercase;
     font-weight: 400;
-    width: fit-content;
     padding: 20px;
     border-radius: 10px;
     border: none;
     color: #edf2fb;
     background-color: hsla(240, 94%, 26%, 1);
+    cursor: pointer;
   }
 }

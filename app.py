@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -25,6 +25,14 @@ def illustrator():
 @app.route('/contact-me')
 def contact_me():
     return render_template('contact_me.html')
+
+@app.route('/contact-me-successful-response', methods=["POST"])
+def contact_me_successful_response():
+    name = request.form.get("name-input");
+    select_option = request.form.get("select-project");
+    text_area = request.form.get("text-area");
+    email = request.form.get("email-input");
+    return render_template('contact_me_successful_response.html')
 
 if __name__ == '__main__':
    app.run(debug = True)

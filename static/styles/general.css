@@ -8,6 +8,13 @@ body {
   background-color: #e2eafc;
   font-family: "Abril Fatface", cursive;
   color: hsl(239, 94%, 19%);
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
 }
 
 main,
@@ -43,8 +50,8 @@ main,
 
 .font-text-normal-responsive {
   font-family: "Raleway";
-  font-size: 1.6vw;
-  line-height: 175%;
+  font-size: 1.3vw;
+  line-height: 200%;
 }
 
 .font-text-big {

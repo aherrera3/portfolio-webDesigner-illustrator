@@ -29,6 +29,10 @@ $font-size-jumbo: 4.3vw;
   );
 }
 
+// .scrolling-status {
+//   overflow: hidden; // overflow-x: hidden;
+// }
+
 /* flipping class and key frames*/
 .flipX {
   display: inline-block;
@@ -79,7 +83,7 @@ main {
     // background-color: lightblue;
 
     .collage {
-      background-color: lightcoral;
+      // background-color: lightcoral;
       position: absolute;
       left: 0%;
       right: 0%;
@@ -87,7 +91,7 @@ main {
       bottom: 0%;
 
       .washi-3-client {
-        background-color: lightblue;
+        // background-color: lightblue;
         position: relative;
         height: 68%;
         width: 43%;
@@ -117,10 +121,10 @@ main {
           top: -7%;
           transform: rotate(30deg);
           z-index: 100;
-          height: fit-content;
+          // height: fit-content;
 
           #washi-tape-3 {
-            width: 100%;
+            max-width: 90%;
             object-fit: cover;
             overflow: hidden;
           }
@@ -128,7 +132,7 @@ main {
       }
 
       .washi-8-fav-hobby {
-        background-color: lightgreen;
+        // background-color: lightgreen;
         position: relative;
         height: 40%;
         width: 55%;
@@ -158,7 +162,7 @@ main {
           z-index: 100;
 
           #washi-tape-8 {
-            width: 100%;
+            max-width: 90%;
             object-fit: cover;
             overflow: hidden;
           }
@@ -166,7 +170,7 @@ main {
       }
 
       .wax-client {
-        background-color: beige;
+        // background-color: beige;
         position: relative;
         width: 45%;
         height: 32%;
@@ -191,13 +195,11 @@ main {
 
         .container-wax-seal {
           position: absolute;
-          left: -15%;
-          top: -25%;
+          left: -8%;
+          top: -16%;
           z-index: 100;
 
           #wax-seal {
-            // width: 100%;
-            // height: 100%;
             max-width: 90px;
             max-height: 90px;
             object-fit: cover;

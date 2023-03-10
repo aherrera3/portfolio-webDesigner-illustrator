@@ -29,7 +29,7 @@ main,
   margin-bottom: 4vh;
 }
 .right-section .underline-input {
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   font-family: inherit;
   color: #7d8597;
   border: none;
@@ -54,7 +54,7 @@ main,
 }
 .right-section #select-project {
   font-family: inherit;
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   color: #7d8597;
   padding: 0.5vw 0.5vw;
   background-color: transparent;
@@ -67,7 +67,7 @@ main,
 }
 .right-section .text-area {
   resize: none;
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   font-family: inherit;
   color: #5c677d;
   width: 35vw;
@@ -81,16 +81,15 @@ main,
 .right-section .text-area:focus {
   outline: none;
 }
-.right-section .send-button {
+.right-section .submit-input {
   font-family: inherit;
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   text-transform: uppercase;
   font-weight: 400;
-  width: -moz-fit-content;
-  width: fit-content;
   padding: 20px;
   border-radius: 10px;
   border: none;
   color: #edf2fb;
   background-color: hsl(240, 94%, 26%);
+  cursor: pointer;
 }/*# sourceMappingURL=contact_me.css.map */

@@ -13,7 +13,8 @@ head %}
   </div>
   <div class="right-section">
     <div class="about-me-text font-text-normal-responsive">
-      <form>
+      <!-- contact form -->
+      <form action="/contact-me-successful-response" method="POST">
         Hi there!
         <br />
         <p></p>
@@ -25,10 +26,11 @@ head %}
           placeholder="Your Name"
           id="name-input"
           class="underline-input"
+          name = "name-input"
         />
         and
         <label for="select-project"> I would like to contact you for a </label>
-        <select id="select-project" name="project">
+        <select id="select-project" name="select-project">
           <option value="web-design">Web Design</option>
           <option value="illustration">Illustration</option>
           <option value="other">Other</option>
@@ -40,6 +42,7 @@ head %}
           cols="60"
           rows="10"
           class="text-area"
+          name="text-area"
         ></textarea>
         <br />
 
@@ -50,12 +53,16 @@ head %}
           placeholder="Your Email"
           id="email-input"
           class="underline-input"
+          name="email-input"
         />. <br />
         <p></p>
         Thanks!
+        <br>
+        <br>
+        <input type="submit" value="Send Email" class="submit-input"></input>
       </form>
     </div>
-    <button type="submit" class="send-button">Send Email</button>
+    <!-- <button type="submit" class="send-button">Send Email</button> -->
   </div>
 </section>
 {% endblock %}

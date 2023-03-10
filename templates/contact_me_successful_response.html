@@ -1,0 +1,21 @@
+{% extends 'base.html' %} {% block title %} Contact Me |{% endblock %} {% block
+head %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ url_for('static',filename='styles/contact_me.css') }}"
+/>
+{% endblock %} {% block content %}
+
+<section class="section">
+  <div class="left-section font-size-jumbo">
+    <span class="span-hover title"> Contact me </span>
+  </div>
+  <div class="right-section">
+    <div class="about-me-text font-text-normal-responsive">
+      <!-- contact form reply message -->
+      Thanks for your message! ❤️
+    </div>
+  </div>
+</section>
+{% endblock %}
