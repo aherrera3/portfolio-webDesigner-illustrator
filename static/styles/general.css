@@ -8,6 +8,78 @@ body {
   background-color: #e2eafc;
   font-family: "Abril Fatface", cursive;
   color: hsl(239, 94%, 19%);
+}
+
+main,
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 0px 0px 8vw;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 100px;
+}
+
+.section {
+  top: 0px;
+}
+
+.font-size-jumbo {
+  font-size: 4.3vw;
+}
+
+.font-size-jumbo-px {
+  font-size: 80px;
+}
+
+.font-text-normal {
+  font-family: "Raleway";
+  font-size: 24px;
+  line-height: 175%;
+}
+
+.font-text-normal-responsive {
+  font-family: "Raleway";
+  font-size: 1.6vw;
+  line-height: 175%;
+}
+
+.font-text-big {
+  font-family: "Raleway";
+  font-size: 30px;
+  line-height: 175%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.span-hover:hover {
+  color: hsl(239, 94%, 32%);
+  cursor: pointer;
+}
+
+.img-hover,
+.text-effect {
+  transition: 0.8s;
+}
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
+/*-- fonts --*/
+/*-- colors --*/
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: #e2eafc;
+  font-family: "Abril Fatface", cursive;
+  color: hsl(239, 94%, 19%);
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
   overflow-y: scroll;
@@ -81,4 +153,4 @@ a:visited {
 .img-hover:hover {
   transform: scale(1.1);
   z-index: 50 !important;
-}/*# sourceMappingURL=general.css.map */
+} /*# sourceMappingURL=general.css.map */

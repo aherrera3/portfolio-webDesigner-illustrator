@@ -16,6 +16,24 @@ main,
   top: 360px;
   transform: rotate(-90deg);
 }
+main,
+.section {
+  padding: 0;
+}
+
+.left-section {
+  display: flex;
+  flex: 1;
+  position: relative;
+  top: -50px;
+  height: 100vh;
+}
+.left-section .title {
+  position: fixed;
+  left: 0px;
+  top: 360px;
+  transform: rotate(-90deg);
+}
 
 .right-section {
   display: flex;
@@ -92,4 +110,4 @@ main,
   color: #edf2fb;
   background-color: hsl(240, 94%, 26%);
   cursor: pointer;
-}/*# sourceMappingURL=contact_me.css.map */
+} /*# sourceMappingURL=contact_me.css.map */
