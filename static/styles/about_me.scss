@@ -1,5 +1,5 @@
 .left-section {
-  // background-color: coral;
+  background-color: coral;
   display: flex;
   flex: 1;
   position: relative;
@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  // background-color: lightpink;
+  background-color: lightpink;
   height: 100vh;
   top: 50px;
   flex: 3;
@@ -130,6 +130,30 @@
         overflow: hidden;
         border-radius: 30px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .left-section {
+    top: 0px;
+    align-items: center;
+    justify-content: center;
+    .title {
+      position: relative;
+      transform: none;
+      bottom: 0%;
+    }
+  }
+
+  .right-section {
+    flex: auto;
+    .about-me-text {
+      text-align: right;
+      // line-height: 175%; // ya esta
+      margin-top: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
     }
   }
 }

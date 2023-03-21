@@ -5,10 +5,15 @@
 $font-primary: "Abril Fatface", cursive;
 $font-secundary: "Raleway";
 
-$font-size-jumbo: 4.3vw;
-$font-size-jumbo-px: 80px;
-$font-size-text-normal-px: 24px;
-$font-size-text-normal: 1.3vw;
+$font-size-jumbo: 4.3vw; // delete it?
+
+$font-size-jumbo-pc: 80px;
+$font-size-jumbo-mobil: 40px;
+
+$font-size-text-pc: 24px;
+$font-size-text-mobil: 16px;
+
+$font-size-text-normal: 1.3vw; // delete it?
 $font-size-text-big: 30px;
 
 /*-- colors --*/
@@ -62,12 +67,12 @@ main,
 }
 
 .font-size-jumbo-px {
-  font-size: $font-size-jumbo-px;
+  font-size: $font-size-jumbo-pc;
 }
 
 .font-text-normal {
   font-family: $font-secundary;
-  font-size: $font-size-text-normal-px;
+  font-size: $font-size-text-pc;
   line-height: 175%;
 }
 
@@ -81,6 +86,23 @@ main,
   font-family: $font-secundary;
   font-size: $font-size-text-big;
   line-height: 175%;
+}
+
+// for phones
+@media screen and (max-width: 600px) {
+  main,
+  .section {
+    flex-direction: column;
+    padding: 0px 8vw 0px 8vw;
+  }
+
+  .font-text-normal {
+    font-size: $font-size-text-mobil;
+  }
+
+  .font-size-jumbo-px {
+    font-size: $font-size-jumbo-mobil;
+  }
 }
 
 // .container-fit {
