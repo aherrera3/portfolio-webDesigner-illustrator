@@ -56,10 +56,11 @@
     }
   }
 }
+
 @media screen and (max-width: 600px) {
   #section-portfolio .container-projects {
     flex-direction: column;
-    gap: 10vw;
+    gap: 12vw;
 
     .web-design-projects,
     .illustration-projects {
