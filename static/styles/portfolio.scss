@@ -4,7 +4,7 @@
   gap: 10vh;
   padding: 0px 0px 0px;
   margin-top: 5vh;
-  margin-bottom: 5vh;
+  // margin-bottom: 5vh;
 
   .container-projects {
     display: flex;
@@ -58,6 +58,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  #section-portfolio {
+    margin-top: 0px;
+  }
+
   #section-portfolio .container-projects {
     flex-direction: column;
     gap: 12vw;
