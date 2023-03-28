@@ -3,21 +3,7 @@
 
 // VARIABLES
 /*-- fonts --*/
-// $font-primary: "Abril Fatface", cursive;
-// $font-secundary: "Raleway";
 $font-size-jumbo: 4.3vw;
-
-/*-- colors --*/
-// $background-color: #e2eafc;
-// $title-default-color: hsla(239, 94%, 19%, 1);
-// $title-hover-color: hsla(239, 94%, 32%, 1);
-
-//// general styles:
-
-// body {
-//   // font-family: $font-primary;
-//   // color: $title-default-color;
-// }
 
 .hero-div {
   height: inherit;
@@ -42,6 +28,7 @@ $font-size-jumbo: 4.3vw;
   animation: 1.6s anim-flipX ease-out;
 }
 
+// animate the heading
 @keyframes anim-flipX {
   0% {
     opacity: 0;
@@ -69,12 +56,13 @@ main {
     display: inline;
   }
 
-  .section-1 {
+  .left-section {
     position: relative;
     flex: 2;
+    // background-color: aquamarine;
   }
 
-  .section-2 {
+  .right-section {
     position: relative;
     flex: 3;
     height: 100%;
@@ -221,5 +209,54 @@ main {
       //   z-index: 50;
       // }
     }
+  }
+}
+
+// tablets
+@media screen and (max-width: 1000px) and (min-width: 501px) {
+  // .left-section {
+  //   top: 0px;
+  //   align-items: center;
+  //   justify-content: center;
+  //   .title {
+  //     position: relative;
+  //     transform: none;
+  //     bottom: 0%;
+  //   }
+  // }
+
+  .right-section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+// mobil
+@media screen and (max-width: 500px) {
+  .intro-heading {
+    text-align: right;
+  }
+  .hero-div {
+    height: inherit;
+
+    background: radial-gradient(
+          15.94% 15.94% at 40.97% 75.38%,
+          rgba(34, 14, 164, 0.2) 0%,
+          rgba(34, 14, 164, 0) 100%
+        )
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+      radial-gradient(
+          36.81% 11.96% at 74.58% 83%,
+          rgba(34, 14, 164, 0.2) 0%,
+          rgba(34, 14, 164, 0) 100%
+        )
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+      radial-gradient(
+          71.11% 19.32% at 61.94% 51.56%,
+          rgba(35, 14, 165, 0.2) 0%,
+          rgba(0, 0, 0, 0) 100%,
+          rgba(35, 14, 164, 0) 100%
+        )
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
   }
 }

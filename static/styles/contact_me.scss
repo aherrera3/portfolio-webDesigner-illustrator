@@ -1,9 +1,9 @@
 $user-input-font: 1.2vw;
 
-main,
-.section {
-  padding: 0;
-}
+// main,
+// .section {
+//   padding: 0;
+// }
 
 .left-section {
   // background-color: coral;
@@ -115,5 +115,23 @@ main,
     color: #edf2fb;
     background-color: hsla(240, 94%, 26%, 1);
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .left-section {
+    top: 0px;
+    align-items: center;
+    justify-content: center;
+    .title {
+      position: relative;
+      transform: none;
+      bottom: 0%;
+    }
+  }
+
+  .right-section {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
