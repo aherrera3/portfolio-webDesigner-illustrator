@@ -2,6 +2,11 @@
 
 Portfolio project for a Web Designer and Illustrator [not finished yet]. Its part of my personal portfolio.
 
+Clone the repository and run the following command to visualize the website:
+```bash
+flask run
+```
+
 ## Front End
 
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
